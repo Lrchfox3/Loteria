@@ -27,15 +27,15 @@ public class inicio {
 
         try {
 
-            /*CnnMySql conMySql = new CnnMySql();
+            CnnMySql conMySql = new CnnMySql();
             conMySql.setServidor(cnnConfig.getString("NombreServidor"));
             conMySql.setBD(cnnConfig.getString("NombreBaseDatos"));            
             conMySql.setUsuario(cnnConfig.getString("Usuario"));
             conMySql.setContrasenya(cnnConfig.getString("Contrasenya"));
             conMySql.setPuerto(Integer.valueOf(cnnConfig.getString("Puerto")));
-            conMySql.iniciarConexion();*/
+            conMySql.iniciarConexion();
                                                                      
-            CnnSqlServer conSQLServer = new CnnSqlServer();
+            /*CnnSqlServer conSQLServer = new CnnSqlServer();
             conSQLServer.setNombreServidor(cnnConfig.getString("NombreServidor"));
             conSQLServer.setNombreBaseDatos(cnnConfig.getString("NombreBaseDatos"));
             conSQLServer.setNombreAplicacion(cnnConfig.getString("NombreAplicacion"));
@@ -43,7 +43,7 @@ public class inicio {
            conSQLServer.setContraseyna(cnnConfig.getString("Contrasenya"));
             conSQLServer.setPuerto(new Integer(cnnConfig.getString("Puerto")).intValue());
 
-            conSQLServer.iniciarConexion();
+            conSQLServer.iniciarConexion();*/
         } catch (SQLException ex) {
             mensaje = "Error de conexión: " + ex.getMessage() + ". ref: Inicio.Main";
             System.out.println(mensaje);
